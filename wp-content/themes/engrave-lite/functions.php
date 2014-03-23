@@ -46,7 +46,6 @@ if ( ! isset( $content_width ) )
 	include_once( get_template_directory() . '/lib/widgets/tabs.php' );
 	include_once( get_template_directory() . '/lib/widgets/tagscloud.php' );
 
-pll_register_string('First Section Title', 'thinkup_homepage_section1_title');
 
 //----------------------------------------------------------------------------------
 //	Assign Theme Specific Functions

@@ -61,6 +61,14 @@ function thinkup_reduxvariables() {
 	$GLOBALS['thinkup_homepage_introactionpage']            = thinkup_var ( 'thinkup_homepage_introactionpage' );
 	$GLOBALS['thinkup_homepage_introactioncustom']          = thinkup_var ( 'thinkup_homepage_introactioncustom' );
 
+	if (function_exists('pll__')) {
+	$GLOBALS['thinkup_homepage_section1_title']             = pll__(thinkup_var ( 'thinkup_homepage_section1_title' ));
+	$GLOBALS['thinkup_homepage_section1_desc']              = pll__(thinkup_var ( 'thinkup_homepage_section1_desc' ));
+	$GLOBALS['thinkup_homepage_section2_title']             = pll__(thinkup_var ( 'thinkup_homepage_section2_title' ));
+	$GLOBALS['thinkup_homepage_section2_desc']              = pll__(thinkup_var ( 'thinkup_homepage_section2_desc' ));
+	$GLOBALS['thinkup_homepage_section3_title']             = pll__(thinkup_var ( 'thinkup_homepage_section3_title' ));
+	$GLOBALS['thinkup_homepage_section3_desc']              = pll__(thinkup_var ( 'thinkup_homepage_section3_desc' ));
+	}
 	//  1.3.     Header
 	$GLOBALS['thinkup_header_searchswitch']                 = thinkup_var ( 'thinkup_header_searchswitch' );
 	$GLOBALS['thinkup_header_socialswitch']                 = thinkup_var ( 'thinkup_header_socialswitch' );

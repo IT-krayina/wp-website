@@ -1375,6 +1375,15 @@ function setup_framework_options(){
     global $ReduxFramework;
     $ReduxFramework = new ReduxFramework($sections, $args, $tabs);
 
+	if (function_exists('pll_register_string')) {
+		pll_register_string('Homepage Section 1 Title', thinkup_var ('thinkup_homepage_section1_title'));
+		pll_register_string('Homepage Section 2 Title', thinkup_var ('thinkup_homepage_section2_title'));
+		pll_register_string('Homepage Section 3 Title', thinkup_var ('thinkup_homepage_section3_title'));
+		pll_register_string('Homepage Section 1 Desc', thinkup_var ('thinkup_homepage_section1_desc'));
+		pll_register_string('Homepage Section 2 Desc', thinkup_var ('thinkup_homepage_section2_desc'));
+		pll_register_string('Homepage Section 3 Desc', thinkup_var ('thinkup_homepage_section3_desc'));
+	}
+
 }
 add_action('init', 'setup_framework_options', 0);
 
